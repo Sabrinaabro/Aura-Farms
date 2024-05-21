@@ -1,0 +1,57 @@
+#monitor svg{
+position: absolute;
+width: 1280px;
+height: 288px;
+left: 80px;
+top: 700px;
+}
+.wrappermonitor{
+background: url(../../assets/Rectangle.png);
+position: absolute;
+width: 1280px;
+height: 526px;
+left: 80px;
+top: 884px;
+}
+.wrappermonitor h2{
+position: absolute;
+width: 629px;
+height: 30px;
+left: 335px;
+top: 1px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 800;
+font-size: 64px;
+line-height: 150%;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+}
+.wrappermonitor p{
+position: absolute;
+width: 453px;
+height: 43px;
+left: 445px;
+top: 135px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 150%;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+}
+.info{
+background: url(../../assets/Rectangle2.png);
+position: absolute;
+width: 1160px;
+height: 189px;
+left: 60px;
+top: 259px;
+background: #FDE291;
+}
