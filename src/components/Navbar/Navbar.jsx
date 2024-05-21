@@ -1,8 +1,13 @@
 import React from 'react';
 import "./Navbar.css";
+import { useState } from 'react';
 
 
 const Navbar = () => {
+  const [activePage, setActivePage] = useState('Home');
+    const handlePageChange = (page) => {
+        setActivePage(page);
+    };
   return (
     <nav>
       <div className='logo'>
@@ -19,19 +24,35 @@ const Navbar = () => {
 
       <ul>
         <li>
-          <a href='#'>Home</a>
+          <a href='#'
+          onClick={() => handlePageChange('Home')}
+            style={{ fontWeight: activePage === 'Home' ? 'bold' : 'normal' }}
+            >
+            Home</a>
         </li>
 
         <li>
-          <a href='#'>Services</a>
+          <a href='#'
+          onClick={() => handlePageChange('Services')}
+          style={{ fontWeight: activePage === 'Services' ? 'bold' : 'normal' }}
+      >
+          Services</a>
         </li>
 
         <li>
-          <a href='#'>Shop</a>
+          <a href='#'
+           onClick={() => handlePageChange('Shop')}
+           style={{ fontWeight: activePage === 'Shop' ? 'bold' : 'normal' }}
+       >
+          Shop</a>
         </li>
 
         <li>
-          <a href='#'>How It Works</a>
+          <a href='#'
+          onClick={() => handlePageChange('How It Works')}
+          style={{ fontWeight: activePage === 'How It Works' ? 'bold' : 'normal' }}
+      >
+          How It Works</a>
         </li>
 
       </ul>
