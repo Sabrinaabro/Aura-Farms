@@ -11,17 +11,24 @@ const Info = () => {
         <h2>Monitor Your Farm</h2>
         <p>Agriculture Matters To The Future Of Development</p>
         <div className='info'>
-          <ul>
-            <li>
-              Tons Of Harvest
-            </li>
-            <li>
-              Unit Of Cattle
-            </li>
-            <li>
-              Hectares Of Farm
-            </li>
-          </ul>
+        <div className='Tons'>
+          <img src='src/assets/tons.png'></img>
+          <h1>10500</h1>
+          <p>Tons Of Harvest</p>
+          </div>
+
+          <div className='cattle'>
+          <img src='src/assets/cattle.png'></img>
+          <h1>3750</h1>
+          <p>Units Of Cattle</p>
+          </div>
+
+          <div className='hectare'>
+          <img src='src/assets/hectare.png'></img>
+          <h1>8000</h1>
+          <p>Hectares Of Farm</p>
+          </div>
+
         </div>
       </div>
     </section>

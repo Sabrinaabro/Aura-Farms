@@ -55,3 +55,141 @@ left: 60px;
 top: 259px;
 background: #FDE291;
 }
+.Tons img{
+
+position: absolute;
+width: 93px;
+height: 97px;
+left: 65px;
+top: 50px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+.Tons h1{
+
+position: absolute;
+width: 147px;
+height: 36px;
+left: 195px;
+top: 28px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 34px;
+line-height: 150%;
+display: flex;
+align-items: center;
+text-align: center;
+color: #000000;
+}
+.Tons p{
+position: absolute;
+width: 234px;
+height: 36px;
+left: 179px;
+top: 90px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+display: flex;
+align-items: center;
+text-align: center;
+color: #000000;
+}
+
+.cattle img{
+
+    position: absolute;
+    width: 93px;
+    height: 97px;
+    left: 425px;
+    top: 50px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+    }
+    .cattle h1{
+    
+    position: absolute;
+    width: 147px;
+    height: 36px;
+    left: 554px;
+    top: 28px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    }
+    .cattle p{
+    position: absolute;
+    width: 234px;
+    height: 36px;
+    left: 530px;
+    top: 90px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    }
+
+    .hectare img{
+
+        position: absolute;
+        width: 93px;
+        height: 97px;
+        left: 765px;
+        top: 50px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        
+        }
+        .hectare h1{
+        
+        position: absolute;
+        width: 147px;
+        height: 36px;
+        left: 904px;
+        top: 28px;
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 34px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+        }
+        .hectare p{
+        position: absolute;
+        width: 234px;
+        height: 36px;
+        left: 879px;
+        top: 90px;
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+        }
+
