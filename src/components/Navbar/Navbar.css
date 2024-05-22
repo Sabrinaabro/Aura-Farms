@@ -14,8 +14,7 @@ line-height: 20px;
 nav ul{
     display: flex;
     list-style: none;
-    gap: 44px;
-    
+    gap: 44px;   
 }
 .logo{
 
