@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 # Aura-Farms
-Responsive Farm Website Using React.js 
+Farm Website Using React.js (converting figma design into code)
 =======
 # React + Vite
 
