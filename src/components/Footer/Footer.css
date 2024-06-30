@@ -1,0 +1,35 @@
+footer{
+background: url(src/assets/footer.png);
+position: absolute;
+height: 374px;
+left: 79px;
+right: 81px;
+top: 2877px;
+
+box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 11px;
+}
+.flogo img{
+position: absolute;
+width: 27.98px;
+height: 29.46px;
+left: 45px;
+top: 56px;
+}
+.logoname{
+
+position: absolute;
+width: 131px;
+height: 33px;
+left: 80px;
+top: 54px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 700;
+font-size: 22px;
+line-height: 150%;
+display: flex;
+align-items: center;
+color: #000000;
+}

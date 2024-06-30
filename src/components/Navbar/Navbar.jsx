@@ -14,17 +14,17 @@ const Navbar = () => {
         <img src="src/assets/icon.png" />
       </div>
 
-      <a href='#' className='search'>
+      <a href='/' className='search'>
         <img src="src/assets/search.svg" />
         </a>
 
-        <a href='#' className='btn'>
+        <a href='/' className='btn'>
           Contact Us
         </a>  
 
       <ul>
         <li>
-          <a href='#'
+          <a href='/'
           onClick={() => handlePageChange('Home')}
             style={{ fontWeight: activePage === 'Home' ? 'bold' : 'normal' }}
             >
@@ -32,7 +32,7 @@ const Navbar = () => {
         </li>
 
         <li>
-          <a href='#'
+          <a href='/'
           onClick={() => handlePageChange('Services')}
           style={{ fontWeight: activePage === 'Services' ? 'bold' : 'normal' }}
       >
@@ -40,7 +40,7 @@ const Navbar = () => {
         </li>
 
         <li>
-          <a href='#'
+          <a href='/'
            onClick={() => handlePageChange('Shop')}
            style={{ fontWeight: activePage === 'Shop' ? 'bold' : 'normal' }}
        >
@@ -48,7 +48,7 @@ const Navbar = () => {
         </li>
 
         <li>
-          <a href='#'
+          <a href='/'
           onClick={() => handlePageChange('How It Works')}
           style={{ fontWeight: activePage === 'How It Works' ? 'bold' : 'normal' }}
       >
