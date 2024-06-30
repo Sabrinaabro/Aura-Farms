@@ -11,8 +11,10 @@ const Footer = () => {
               <img src='src/assets/icon.svg'></img>
               <span className='logoname'>Aura Farms.</span>
             </a>
+
             <div className='social-icons'>
-              <a href='#'></a>
+
+      
             </div>
           </div>
         </div>
