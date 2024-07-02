@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Navbar.css";
 import { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [activePage, setActivePage] = useState('Home');
@@ -14,45 +14,45 @@ const Navbar = () => {
         <img src="src/assets/icon.png" />
       </div>
 
-      <a href='/' className='search'>
+      <Link to='/' className='search'>
         <img src="src/assets/search.svg" />
-        </a>
+        </Link>
 
-        <a href='/' className='btn'>
+        <Link to='/' className='btn'>
           Contact Us
-        </a>  
+        </Link>  
 
       <ul>
         <li>
-          <a href='/'
+          <Link to='/'
           onClick={() => handlePageChange('Home')}
             style={{ fontWeight: activePage === 'Home' ? 'bold' : 'normal' }}
             >
-            Home</a>
+            Home</Link>
         </li>
 
         <li>
-          <a href='/'
-          onClick={() => handlePageChange('Services')}
-          style={{ fontWeight: activePage === 'Services' ? 'bold' : 'normal' }}
+          <Link to='/services'
+          onClick={() => handlePageChange('Story')}
+          style={{ fontWeight: activePage === 'Story' ? 'bold' : 'normal' }}
       >
-          Services</a>
+          Services</Link>
         </li>
 
         <li>
-          <a href='/'
-           onClick={() => handlePageChange('Shop')}
-           style={{ fontWeight: activePage === 'Shop' ? 'bold' : 'normal' }}
+          <Link to='/shop'
+           onClick={() => handlePageChange('Products')}
+           style={{ fontWeight: activePage === 'Products' ? 'bold' : 'normal' }}
        >
-          Shop</a>
+          Shop</Link>
         </li>
 
         <li>
-          <a href='/'
+          <Link to='/'
           onClick={() => handlePageChange('How It Works')}
           style={{ fontWeight: activePage === 'How It Works' ? 'bold' : 'normal' }}
       >
-          How It Works</a>
+          How It Works</Link>
         </li>
 
       </ul>
