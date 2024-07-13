@@ -1,13 +1,17 @@
 require("dotenv").config();
 const express = require("express");
 const app = express();
-const router = require("./router/auth-router");
+const authRoute = require("./router/auth-router");
+const contactRoute = require("./router/contact-router")
 const connectionDB = require("./utils/db");
+const errorMiddleware = require("./middlewares/error-middleware");
 
 app.use(express.json()); 
 //this loc adds Express Middleware that parses incoming request bodies with JSON payloads
 
-app.use("/api/auth", router);
+app.use("/api/auth", authRoute);
+app.use("/api/form", contactRoute);
+app.use(errorMiddleware);
 
 const port = 5000;
 
