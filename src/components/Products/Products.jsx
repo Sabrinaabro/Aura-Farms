@@ -1,14 +1,15 @@
 import React from 'react';
 import "./Products.css";
+import { Link } from 'react-router-dom';
 
 const Products = () => {
   return (
       <div className='productwrapper'>
         <h1>All Our</h1>
         <p>Organic Products</p>
-        <a href='#' className='btn'>
+        <Link to='/shop' className='btn'>
           Our Products
-        </a>
+        </Link>
         <div className='fruits'>
           <img src="src/assets/fruit.png"/>
         </div>

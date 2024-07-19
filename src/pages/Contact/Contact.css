@@ -1,0 +1,103 @@
+.section-contact {
+  
+    & .contact-content {
+      padding:0px;
+  
+      & h1 {
+        margin-bottom: 6.2rem;
+      }
+    }
+    .main-heading{
+  font-size: 2.5rem;       
+  font-weight: bold;       
+  color: #FBC855;            
+  margin-left: 7rem;   
+  margin-top: 150px;          
+  letter-spacing: 1px;    
+  line-height: 1.2; 
+  position: relative; 
+    }
+    .main-heading::after {
+        content: '';
+        position: absolute;
+        width: 10%;              
+        height: 3px;            
+        background-color: #333;  
+        left: 5%;               
+        bottom: 0;              
+      }
+
+    & .container {
+      padding-top: 5.2rem;
+    }
+    & .contact-img {
+      display: flex;
+      justify-content: start;
+      margin-top: -180px;
+      & img {
+        width: 50%;
+        height: auto;
+      }
+    }
+  
+    & .section-form {
+        display: flex;
+        justify-content: right; 
+        
+       & .form-card{
+        background: #FBC855; 
+    border: 3px solid #4D542B; /* Card border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for card */
+    padding: 2rem; /* Padding inside the card */
+    width: 40%; 
+    margin-top: -659px;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+       } 
+      & form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        width: 100%;
+      }
+      & label {
+        display: block;
+        margin-bottom: 0.6rem;
+        text-transform: capitalize;
+        color: #333;
+      }
+  
+      & input,
+      textarea {
+        width: 90%;
+        padding: 0.8rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      & .button-container{
+      display: flex;
+      justify-content: center; 
+      margin-top: 2rem; 
+      width: 100%; 
+      
+      }
+      & button {
+        margin-left: 200px;
+        background-color: #e0a838; 
+        color: #333; 
+        border: 1.5px solid #4D542B;
+        padding: 1rem 2rem; /* Button padding */
+        border-radius: 5px; /* Rounded corners */
+        font-size: 1rem; /* Button text size */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        transition: background-color 0.3s ease; /* Smooth transition */
+      }
+  
+      & button:hover {
+        background-color: #ecdab5; /* Darker background color on hover */
+      }
+    }
+  }

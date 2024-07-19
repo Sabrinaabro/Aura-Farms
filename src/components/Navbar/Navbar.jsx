@@ -3,30 +3,35 @@ import "./Navbar.css";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Navbar = () => {
   const [activePage, setActivePage] = useState('Home');
+
     const handlePageChange = (page) => {
         setActivePage(page);
-    };
+    }
   return (
     <nav>
-      <div className='logo'>
-        <img src="src/assets/icon.png" />
-      </div>
+      <Link
+      to='/'
+      className={`logo ${activePage === 'Home' ? 'active' : ''}`}
+      onClick={() => handlePageChange('Home')}
+    >
+      <img src="src/assets/icon.png" alt="Logo" />
+    </Link>
 
-      <Link to='/' className='search'>
-        <img src="src/assets/search.svg" />
-        </Link>
-
-        <Link to='/' className='btn'>
-          Contact Us
-        </Link>  
-
+    <Link 
+  to='/register' 
+  className={`btn ${activePage === 'Home' ? 'active' : ''}`} 
+  onClick={() => handlePageChange('Register')}
+>
+   Sign up
+ </Link>
       <ul>
         <li>
           <Link to='/'
           onClick={() => handlePageChange('Home')}
-            style={{ fontWeight: activePage === 'Home' ? 'bold' : 'normal' }}
+            className={activePage === 'Home' ? 'active' : '' }
             >
             Home</Link>
         </li>
@@ -34,27 +39,34 @@ const Navbar = () => {
         <li>
           <Link to='/services'
           onClick={() => handlePageChange('Story')}
-          style={{ fontWeight: activePage === 'Story' ? 'bold' : 'normal' }}
+          className={activePage === 'Story' ? 'active' : '' }
       >
           Services</Link>
         </li>
 
         <li>
-          <Link to='/shop'
-           onClick={() => handlePageChange('Products')}
-           style={{ fontWeight: activePage === 'Products' ? 'bold' : 'normal' }}
-       >
-          Shop</Link>
+        <Link to='/shop'
+        onClick={() => handlePageChange('Shop')}
+        className={activePage === 'Shop' ? 'active' : ''}
+        >
+        Shop
+       </Link>
         </li>
 
         <li>
-          <Link to='/'
-          onClick={() => handlePageChange('How It Works')}
-          style={{ fontWeight: activePage === 'How It Works' ? 'bold' : 'normal' }}
-      >
-          How It Works</Link>
+          <Link to='/about'
+          onClick={() => handlePageChange('About')}
+          className={activePage === 'About' ? 'active' : '' }
+      >About</Link>
         </li>
 
+        <li className='contact-us'>
+          <Link to='/contact-us'
+          onClick={() => handlePageChange('Contact Us')}
+          className={activePage === 'Contact Us' ? 'active' : ''}
+      >
+          Contact Us</Link>
+        </li>
       </ul>
     </nav>
   )
